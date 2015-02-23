@@ -6,11 +6,13 @@ function repoList(){
     $.get("https://api.github.com/orgs/ucdd2-sp15/repos", github, function(data) {
 
         // Q: What is the parameter 'github'? Where was it defined? What's the purpose? 
+        // A: The parameter is an object defined in github.js that requests data 
 
         // Q: Why is JSON.parse no longer necessary?
+        // A: Already parsed
         var repos = data
         
-        // Q. Why are these templates files stored in a separate folder inside contents/?
+        // Q: Why are these templates files stored in a separate folder inside contents/?
         $.get("/git-jquery/templates/repoList.jade", function(template) {
 
             // render the template

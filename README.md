@@ -1,6 +1,8 @@
 # git-jquery
 Git One Page Client-side App
 
+### Github Pages:
+    $ http://miwi0617.github.io/git-jquery/
 
 # Deploy
 
